@@ -1,8 +1,8 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](README.md)
 * [Discover 功能](discover-gong-neng.md)
-  * 设置时间过滤器
+  * [设置时间过滤器](discover-gong-neng/she-zhi-shi-jian-guo-lv-qi.md)
   * 如何搜索数据
   * 如何按字段过滤数据
   * 查看文档数据
