@@ -13,7 +13,7 @@
    * 要搜索一个值的范围，你可以用范围查询语法，`[START_VALUE TO END_VALUE]`。比如，要查找微博粉丝数 400 到 500 之间的，你可以输入 `follower_count:[400 TO 500]`。
    * 要指定更复杂的搜索标准，你可以用布尔操作符 `AND`, `OR`, 和 `NOT`。比如，微博粉丝数 400 到 500 之间的，并且过滤有特殊符号的`今日头条`数据，你可以输入 `(content_full:"今日头条" NOT (content_full:"【今日头条】" OR content_full:"今日头条|" OR content_full:"今日头条：") ) AND follower_count:[400 TO 500}`
 
-   ![](/assets/import4.png)
+   ![](/assets/import5.png)
 
 > 这些例子都用了 Lucene query syntax。你也可以提交 Elasticsearch Query DSL 式的请求。更多示例，参见之前 [Elasticsearch 章节](../../elasticsearch/api/search.md)。
 
@@ -50,11 +50,10 @@ content_full: ("今日头条" AND "北方吃元宵") 1 hits
 ```
 
 ```
-
 follower_count:["400" TO "500"}  大于等于400小于500
 
 follower_count:["400" TO "500"]  大于等于400小于等于500
- 
+
 follower_count:["400" TO *} 大于等于400
 ```
 
