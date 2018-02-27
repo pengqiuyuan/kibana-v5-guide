@@ -3,7 +3,7 @@
 * [简介](README.md)
 * [Discover 功能](discover-gong-neng.md)
   * [设置时间过滤器](discover-gong-neng/she-zhi-shi-jian-guo-lv-qi.md)
-  * 如何搜索数据
+  * [如何搜索数据](discover-gong-neng/ru-he-sou-suo-shu-ju.md)
   * 如何按字段过滤数据
   * 查看文档数据
   * 文档表格添加、删除字段列
