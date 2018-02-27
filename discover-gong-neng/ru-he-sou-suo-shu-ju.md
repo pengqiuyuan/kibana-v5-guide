@@ -7,16 +7,56 @@
 要搜索你的数据：
 
 1. 在搜索框内输入请求字符串：
+
    * 简单的文本搜索，直接输入文本字符串【**不建议】**。比如，如果你在搜索网站服务器日志，你可以输入 `今日头条` 来搜索各字段中的 `今日头条` 单词。
    * 要搜索特定字段中的值，则在值前加上字段名。比如，你可以输入 `content_full:"今日头条"` 来限制搜索结果都是在 `content_full` 字段里有 `今日头条` 内容。
    * 要搜索一个值的范围，你可以用范围查询语法，`[START_VALUE TO END_VALUE]`。比如，要查找微博粉丝数 400 到 500 之间的，你可以输入 `follower_count:[400 TO 500]`。
-   * 要指定更复杂的搜索标准，你可以用布尔操作符 `AND`, `OR`, 和 `NOT`。比如，微博粉丝数 400 到 500 之间的，并且过滤有特殊符号的`今日头条`数据，你可以输入 `content_full:"今日头条" NOT (content_full:"【今日头条】" OR content_full:"今日头条|" OR content_full:"今日头条：")   AND follower_count:[400 TO 500}`
+   * 要指定更复杂的搜索标准，你可以用布尔操作符 `AND`, `OR`, 和 `NOT`。比如，微博粉丝数 400 到 500 之间的，并且过滤有特殊符号的`今日头条`数据，你可以输入 `(content_full:"今日头条" NOT (content_full:"【今日头条】" OR content_full:"今日头条|" OR content_full:"今日头条：") ) AND follower_count:[400 TO 500}`
 
    ![](/assets/import4.png)
 
 > 这些例子都用了 Lucene query syntax。你也可以提交 Elasticsearch Query DSL 式的请求。更多示例，参见之前 [Elasticsearch 章节](../../elasticsearch/api/search.md)。
 
 1. 点击回车键，或者点击 `Search` 按钮提交你的搜索请求。
+
+查询示例：
+
+`content_full` 查找`今日头条`
+
+```
+content_full: "今日头条"  3,757 hits
+```
+
+`content_full` 里查找含`今日头条`或者`北方吃元宵`的文档
+
+```
+content_full: ("今日头条" OR "北方吃元宵") 3,791 hits
+```
+
+`content_full` 里查找含`今日头条`并且含`北方吃元宵`的文档
+
+```
+content_full: ("今日头条" AND "北方吃元宵") 1 hits
+
+或者
+
+{"query_string" : { "fields" : ["content_full"],"query" : "\"今日头条\" AND \"北方吃元宵\"" }} 1 hit
+```
+
+`content_full` 里查找含`今日头条`，不含`【今日头条】、今日头条|、今日头条：`，并且微博粉丝数 400 到 500 之间的文档
+
+```
+(content_full:"今日头条" NOT (content_full:"【今日头条】" OR content_full:"今日头条|" OR content_full:"今日头条：") ) AND follower_count:[400 TO 500}  119 hits
+```
+
+```
+
+follower_count:["400" TO "500"}  大于等于400小于500
+
+follower_count:["400" TO "500"]  大于等于400小于等于500
+ 
+follower_count:["400" TO *} 大于等于400
+```
 
 
 
