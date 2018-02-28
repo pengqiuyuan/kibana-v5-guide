@@ -2,11 +2,12 @@
 
 * [简介](README.md)
 * [Discover 功能](discover-gong-neng.md)
-  * [设置时间过滤器](discover-gong-neng/she-zhi-shi-jian-guo-lv-qi.md)
+  * [如何设置时间](discover-gong-neng/she-zhi-shi-jian-guo-lv-qi.md)
   * [如何搜索数据](discover-gong-neng/ru-he-sou-suo-shu-ju.md)
-  * [如何按字段过滤数据](discover-gong-neng/ru-he-an-zi-duan-guo-lv-shu-ju.md)
-  * 查看文档数据
-  * 文档表格添加、删除字段列
+  * [如何过滤数据](discover-gong-neng/ru-he-an-zi-duan-guo-lv-shu-ju.md)
+  * [如何查看单条文档](discover-gong-neng/cha-kan-wen-dang-shu-ju.md)
+  * [文档列表排序](discover-gong-neng/wen-dang-lie-biao-pai-xu.md)
+  * [文档表格添加、删除字段列](discover-gong-neng/wen-dang-biao-ge-tian-jia-3001-shan-chu-zi-duan-lie.md)
   * [字段数据统计](discover-gong-neng/zi-duan-shu-ju-tong-ji.md)
 * [Visualize 功能](visualize-gong-neng.md)
   * 柱状、线、词云图等介绍
