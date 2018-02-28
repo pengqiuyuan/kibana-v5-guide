@@ -12,6 +12,8 @@
 * [Visualize 功能](visualize-gong-neng.md)
   * [柱状图](visualize-gong-neng/zhu-zhuang-tu.md)
   * [图表](visualize-gong-neng/tu-biao.md)
+  * [饼图](visualize-gong-neng/bing-tu.md)
+  * [词云图](visualize-gong-neng/ci-yun-tu.md)
 * [Dashboard 功能](dashboard-gong-neng.md)
-  * [简单的仪表板介绍](dashboard-gong-neng/jian-dan-de-yi-biao-ban-jie-shao.md)
+  * [简单的仪表板组合](dashboard-gong-neng/jian-dan-de-yi-biao-ban-jie-shao.md)
 
