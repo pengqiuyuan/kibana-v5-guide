@@ -10,7 +10,7 @@
   * [文档表格添加、删除字段列](discover-gong-neng/wen-dang-biao-ge-tian-jia-3001-shan-chu-zi-duan-lie.md)
   * [字段数据统计](discover-gong-neng/zi-duan-shu-ju-tong-ji.md)
 * [Visualize 功能](visualize-gong-neng.md)
-  * 柱状、线、词云图等介绍
+  * [柱状、线、词云图等介绍](visualize-gong-neng/zhu-zhuang-3001-xian-3001-ci-yun-tu-deng-jie-shao.md)
 * Dashboard 功能
   * 简单的仪表板介绍
 
