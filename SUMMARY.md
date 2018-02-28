@@ -11,6 +11,7 @@
   * [字段数据统计](discover-gong-neng/zi-duan-shu-ju-tong-ji.md)
 * [Visualize 功能](visualize-gong-neng.md)
   * [柱状、线、词云图等介绍](visualize-gong-neng/zhu-zhuang-3001-xian-3001-ci-yun-tu-deng-jie-shao.md)
+  * [柱状图](visualize-gong-neng/zhu-zhuang-tu.md)
 * [Dashboard 功能](dashboard-gong-neng.md)
   * [简单的仪表板介绍](dashboard-gong-neng/jian-dan-de-yi-biao-ban-jie-shao.md)
 
