@@ -8,8 +8,8 @@
 
    * 简单的文本搜索，直接输入文本字符串。比如，如果你在搜索某个电影，你可以直接输入 `红海行动` 来过滤匹配到的文档。
    * 要搜索特定字段中的值，则在值前加上字段名。比如，你可以输入 `content_full:"红海行动"` 来限制搜索结果都是在 `content_full` 字段里有 `红海行动` 内容。
-   * 要搜索一个值的范围，你可以用范围查询语法，`[START_VALUE TO END_VALUE]`。比如，要查找微博粉丝数 400 到 500 之间的，你可以输入 `follower_count:[400 TO 500]`。
-   * 要指定更复杂的搜索标准，你可以用布尔操作符 `AND`, `OR`, 和 `NOT`。比如，微博粉丝数 400 到 500 之间的，并且过滤有特殊符号的`红海行动`数据，你可以输入 `(content_full:"红海行动" NOT (content_full:"《红海行动》" OR content_full:"红海行动|" OR content_full:"红海行动：") ) AND follower_count:[400 TO 500}`
+   * 要搜索一个值的范围，你可以用范围查询语法，`[START_VALUE TO END_VALUE]`。比如，要查找微博粉丝数 `400` 到 `500` 之间的，你可以输入 `follower_count:[400 TO 500]`。
+   * 要指定更复杂的搜索标准，你可以用布尔操作符 `AND`, `OR`, 和 `NOT`。比如，微博粉丝数 `400` 到 `500` 之间的，并且过滤有特殊符号的`红海行动`数据，你可以输入 `(content_full:"红海行动" NOT (content_full:"《红海行动》" OR content_full:"红海行动|" OR content_full:"红海行动：") ) AND follower_count:[400 TO 500}`
 
    ![](/assets/import5.png)
 
