@@ -4,5 +4,9 @@ Kibana 是一个分析和可视化平台，旨在与 Elasticsearch 合作。提�
 
 ![](/assets/import14.png)
 
-![](/assets/import13.png)
+![](/assets/import21.png)
+
+![](/assets/import22.png)
+
+
 
