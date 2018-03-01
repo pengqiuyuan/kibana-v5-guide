@@ -1,6 +1,6 @@
 #### 词云图
 
-注意高级设置需要添加：`{"execution_hint": "map"}`
+注意高级设置需要添加：`{"execution_hint": "map"} `
 
 ![](/assets/import36.png)
 
